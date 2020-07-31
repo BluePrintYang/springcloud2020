@@ -2,16 +2,16 @@ package top.yangllong.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @Author: yangllong
- * @DATE: 2020/7/25 21:18
+ * @DATE: 2020/7/31 8:42
  */
-@EnableEurekaClient
 @SpringBootApplication
-public class PaymentApplication {
+@EnableEurekaServer
+public class Eureka7002Application {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentApplication.class,args);
+        SpringApplication.run(Eureka7002Application.class,args);
     }
 }
